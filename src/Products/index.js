@@ -1,4 +1,6 @@
 import React, {useState, useEffect}from "react";
+import { ReactDOM } from "react";
+import './style.css'
 
 const Products = () =>{
     const [products, setProducts] = useState([]);
@@ -32,6 +34,12 @@ const Products = () =>{
             {products.map(item => (
             <div key={item.id}>
             <h2>{item.title}</h2>
+            <img src={item.images[0]} alt={item.title} />
+            <p>Rating: {item.rating}</p>
+            <p>Category: {item.category}</p>
+            <p>Brand: {item.brand}</p>
+            <p>Description: {item.description}</p>
+
            </div>
            ))}
     </div>
