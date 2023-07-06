@@ -1,7 +1,21 @@
-img{
-    width: 200px;
-    height: 200px;
+.displayProducts{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+    font-size: 15px;
+    margin-left: 40px;
+    gap: 50px;
+} 
 
+.view{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #2b8a3e;
+}
+.images{
+    border: solid 5px #2b8a3e;
+    margin-top: 8%;
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
 }

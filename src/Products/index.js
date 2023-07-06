@@ -1,5 +1,4 @@
 import React, {useState, useEffect}from "react";
-import { ReactDOM } from "react";
 import './style.css'
 
 const Products = () =>{
@@ -29,16 +28,18 @@ const Products = () =>{
         return <h2>Loading ... </h2>
     }
     return(
-        <div>
-            <h1>All Products</h1>
+          
+        <div className="displayProducts">
+           
             {products.map(item => (
             <div key={item.id}>
             <h2>{item.title}</h2>
-            <img src={item.images[0]} alt={item.title} />
+            <img src={item.images[0]} className="images" />
             <p>Rating: {item.rating}</p>
             <p>Category: {item.category}</p>
             <p>Brand: {item.brand}</p>
             <p>Description: {item.description}</p>
+            <button type="submit" className="view">View More</button >
 
            </div>
            ))}
@@ -47,3 +48,7 @@ const Products = () =>{
 };
 
 export default Products;
+
+
+
+
