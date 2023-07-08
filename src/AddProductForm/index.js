@@ -12,8 +12,6 @@ const AddProductForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Create a new product object with the form data
     const newProduct = {
       title,
       price,
@@ -21,12 +19,10 @@ const AddProductForm = () => {
       brand,
       description,
     };
-
-    // Add the new product details to the query parameters
     const queryParams = new URLSearchParams(location.search);
     queryParams.set("newProduct", JSON.stringify(newProduct));
 
-    // Navigate back to the products page with the updated query parameters
+    
     navigate(`/products?${queryParams.toString()}`);
   };
 
@@ -43,6 +39,8 @@ const AddProductForm = () => {
           />
         </label>
         <br />
+        <br/>
+        <br/>
         <label>
           Price:
           <input
@@ -52,6 +50,8 @@ const AddProductForm = () => {
           />
         </label>
         <br />
+        <br/>
+        <br/>
         <label>
           Category:
           <input
@@ -61,6 +61,8 @@ const AddProductForm = () => {
           />
         </label>
         <br />
+        <br/>
+        <br/>
         <label>
           Brand:
           <input
@@ -70,6 +72,8 @@ const AddProductForm = () => {
           />
         </label>
         <br />
+        <br/>
+        <br/>
         <label>
           Description:
           <textarea
@@ -78,6 +82,8 @@ const AddProductForm = () => {
           />
         </label>
         <br />
+        <br/>
+        <br/>
         <button type="submit">Add Product</button>
       </form>
     </div>
