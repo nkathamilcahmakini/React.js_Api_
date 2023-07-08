@@ -1,0 +1,9 @@
+.productdetails{
+    text-align: center;
+    
+    
+}
+.productdetails > h1{
+        font-size: 50px;
+        color: #2b8a3e;
+}

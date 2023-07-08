@@ -1,12 +1,14 @@
 .displayProducts{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 10%;
-    font-size: 15px;
-    margin-left: 40px;
+    margin-left: 80px;
     gap: 50px;
 } 
-
+#heading{
+    font-size: 50px;
+    color: #2b8a3e;
+    margin-left: 40%;
+}
 .view{
     padding: 15px;
     border-radius: 10px;

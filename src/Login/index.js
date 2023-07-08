@@ -1,5 +1,6 @@
 import React , {useState }from "react";
 import './style.css'
+import { Link } from "react-router-dom";
 
 
 const Login = () =>{
@@ -45,8 +46,9 @@ const Login = () =>{
                 />
                 <br/>
                 <br/>
+                <Link to={'/Products/'}>
                   <button type="submit" className="view">Login</button >
-                
+                </Link>  
             </form>  
                         
         </div>
@@ -54,3 +56,9 @@ const Login = () =>{
     )
 }
 export default Login;
+
+
+
+
+
+
